@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+
+* {
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'Roboto', 'Inter', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+:root {
+  --primary-color: #FF5C00;
+  --primary-white: #ffff;
+  --primary-ash: #494949;
+  --primary-black: #000000;
+  --secondary-black: #25201D;
+  --primary-font: 'Roboto';
+  --secondary-font: 'Inter'
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.header {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-family: 'Inter'!important;
+  font-weight: 600!important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.testimonial {
+  max-width: 500px;
+  padding: 37px 32px;
+  border-radius: 5px;
+  box-shadow: 0px 5px 5px rgba(0,0,0,0.1);
 }
+
+.center {
+  text-align: center;
+  padding: 8px 53px;
+}
+
+.icon {
+  font-size: 32px;
+  padding: 21px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.icon img {
+  height: 200px!important;
+  padding: 25px;
+  background: #FFF8F5;
+  border-radius: 50%;
+}
+
+.button {
+  background: linear-gradient(45deg, #FF5C00 100% , #FF5C00 90%);
+  border-radius: 6px!important;
+  border: 0;
+  color: white!important;
+  height: 48;
+  box-shadow:0 3px 5px 2px rgba(255, 105, 135, .3)!important;
+  text-transform: capitalize!important;
+  padding: 0.8rem 3rem!important
+}
+
+
+.custom-file-input {
+  cursor: pointer
+}
+
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+
+.custom-file-input::before {
+  content: 'Choose your image';
+}
+
+a {
+  text-decoration: none;
+}
+
